@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Org.Asset.Maintenance
+Bundle-SymbolicName: org.asset.maintenance;singleton:=true
+Bundle-Version: 3.1.0.qualifier
+Require-Bundle: org.adempiere.base;bundle-version="2.0.0",
+ org.adempiere.base.process;bundle-version="2.0.0",
+ org.adempiere.plugin.utils;bundle-version="2.0.0",
+ org.adempiere.ui;bundle-version="3.1.0",
+ org.adempiere.ui.zk;bundle-version="3.1.0",
+ org.zkoss.zk.library;bundle-version="7.0.7"
+Export-Package: org.maintenance.model;
+  uses:="javax.swing.table,
+   org.compiere.minigrid,
+   org.adempiere.base,
+   org.compiere.util",
+ org.maintenance.process
+Bundle-Activator: org.adempiere.plugin.utils.AdempiereActivator
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Service-Component: OSGI-INF/Maintenance_ModelFactory.xml
+Bundle-Vendor: OFB Consulting CHILE
